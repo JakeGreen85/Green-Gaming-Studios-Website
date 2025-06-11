@@ -1,10 +1,22 @@
+import React from 'react';
+import { Typography, Col, Row } from 'antd';
+const { Title, Text } = Typography;
+
 function Contact() {
-    return (
-      <div>
-        <h1>Welcome to Smith Services</h1>
-        <p>We provide top-notch solutions for local businesses.</p>
-      </div>
-    );
-  }
-  
+  return (
+    <Row
+      style={{ textAlign: 'center' }}
+    >
+      <Col span={24}>
+        <Title>
+            Contact
+        </Title>
+        <Text type="secondary">
+          Call anytime!
+        </Text>
+      </Col>
+    </Row>
+  );
+}
+
 export default Contact;

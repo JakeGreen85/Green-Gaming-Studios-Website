@@ -2,14 +2,14 @@ import React from 'react';
 import { Typography, Col, Row } from 'antd';
 const { Title, Text } = Typography;
 
-function Home() {
+function Solutions() {
   return (
     <Row
       style={{ textAlign: 'center' }}
     >
       <Col span={24}>
         <Title>
-            Green Gaming Studios
+            Solutions
         </Title>
         <Text type="secondary">
           Creating Beautiful Digital Solutions
@@ -19,4 +19,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Solutions;
