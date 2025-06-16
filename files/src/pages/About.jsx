@@ -12,7 +12,7 @@ function About() {
             About Us
         </Title>
         <Text type="secondary">
-          Creating Beautiful Digital Solutions
+          This is something about us
         </Text>
       </Col>
     </Row>

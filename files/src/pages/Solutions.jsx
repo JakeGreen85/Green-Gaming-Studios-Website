@@ -12,7 +12,7 @@ function Solutions() {
             Solutions
         </Title>
         <Text type="secondary">
-          Creating Beautiful Digital Solutions
+          These are our solutions
         </Text>
       </Col>
     </Row>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Navigate, useLocation } from 'react-router-dom';
-import { Layout, Menu, Typography, Col, Row, Image } from 'antd';
+import { Layout, Menu, Typography, Col, Row, Image, Button } from 'antd';
 import {
   HomeOutlined,
   AppstoreOutlined,
@@ -29,7 +29,7 @@ function Navbar() {
   return (
     <Row>
         <Col span={12} style={{ float: 'left', color: 'white', fontWeight: 'bold', fontSize: '18px' }}>
-        <Image src="./vite.svg" height='80%'/>
+        <Image src="./vite.svg" height='80%' preview={false}/>
         <span style={{ color: 'white', fontWeight: 'bold', fontSize: '18px' }}>
             Green Gaming Studios
         </span>

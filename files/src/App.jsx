@@ -64,7 +64,7 @@ function App() {
       </Layout>
     </Router>
     <Layout>
-      <Footer>
+      <Footer style={{ textAlign: 'center', marginTop: 'auto' }}>
         <Row style={{ textAlign: 'center' }}>
           <Col span={24}>
             <Text type='secondary'>
