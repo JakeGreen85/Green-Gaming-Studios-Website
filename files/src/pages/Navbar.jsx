@@ -8,6 +8,7 @@ import {
   PhoneOutlined,
 } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
+import { wLargeText, wMediumText, wSmallText } from '../App';
 
 function Navbar() {
     const navigate = useNavigate();
@@ -28,11 +29,10 @@ function Navbar() {
   };
   return (
     <Row>
-        <Col span={12} style={{ float: 'left', color: 'white', fontWeight: 'bold', fontSize: '18px' }}>
-        <Image src="./vite.svg" height='80%' preview={false}/>
-        <span style={{ color: 'white', fontWeight: 'bold', fontSize: '18px' }}>
+        <Col span={12}>
+          <span style={wLargeText}>
             Green Gaming Studios
-        </span>
+          </span>
         </Col>
         <Col span={12}>
             <Menu
@@ -42,10 +42,10 @@ function Navbar() {
             onClick={handleClick}
             style={{ justifyContent: 'flex-end' }}
             >
-            <Menu.Item key="home" icon={<HomeOutlined />}>Home</Menu.Item>
-            <Menu.Item key="solutions" icon={<AppstoreOutlined />}>Solutions</Menu.Item>
-            <Menu.Item key="about" icon={<InfoCircleOutlined />}>About</Menu.Item>
-            <Menu.Item key="contact" icon={<PhoneOutlined />}>Contact</Menu.Item>
+            <Menu.Item style={wMediumText} key="home" icon={<HomeOutlined />}>Home</Menu.Item>
+            <Menu.Item style={wMediumText} key="solutions" icon={<AppstoreOutlined />}>Portfolio</Menu.Item>
+            <Menu.Item style={wMediumText} key="about" icon={<InfoCircleOutlined />}>About</Menu.Item>
+            <Menu.Item style={wMediumText} key="contact" icon={<PhoneOutlined />}>Contact</Menu.Item>
             </Menu>
         </Col>
     </Row>

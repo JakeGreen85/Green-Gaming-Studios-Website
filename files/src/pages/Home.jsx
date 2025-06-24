@@ -1,6 +1,7 @@
 import React from 'react';
-import { Typography, Col, Row, Button, Carousel } from 'antd';
+import { Typography, Col, Row, Button, Carousel, Image } from 'antd';
 const { Title, Text } = Typography;
+import { wLargeText, wMediumText, wSmallText, dLargeText, dMediumText, wTitleText } from '../App';
 
 const contentStyle = {
   height: '160px',
@@ -13,46 +14,58 @@ const contentStyle = {
 function Home() {
   return (
     <>
-    {/* <div style={{
-      backgroundImage: "url('./frontpage_background.png')",
+    <div style={{
+      backgroundImage: "url('./chibo pool.png')",
       backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      height: '200vh',
-    }}> */}
+      backgroundPosition: 'center 75%',
+      height: '50vh',
+      marginTop: '10px',
+      marginBottom: '10px'
+    }}>
     <Row
       style={{ textAlign: 'center' }}
       >
       <Col span={24}>
-        <Title>
-          Green Gaming Studios
+        <Title style={wTitleText}>
+          
         </Title>
-        <Text type="secondary">
-          We build immersive games and beautiful websites for modern brands.
-        </Text>
       </Col>
     </Row>
+    </div>
 
     <Row style={{ textAlign: 'center' }}>
       <Col span={24}>
-      <Button>
-        View Our Solutions
-      </Button>
+      <Title style={dLargeText}>
+        Our Games
+      </Title>
       </Col>
     </Row>
-    <Row>
-      <Col span={24}>
-        <Carousel autoplay={{ dotDuration: true }} autoplaySpeed={5000}>
+    <Row style={{ textAlign: 'center'}} justify={'center'}>
+      <Col span={12} >
+        <Carousel arrows={true} autoplay={{ dotDuration: true }} autoplaySpeed={5000}>
           <div>
-            <h3 style={contentStyle}>1</h3>
+            <Image src="./chibo image.png" style={{borderRadius: '20%'}} preview={false}/>
+              <Row
+                style={{ textAlign: 'center' }}
+                >
+                <Col span={24}>
+                  <Title style={dMediumText}>
+                    Chibo: Journey of Fate
+                  </Title>
+                </Col>
+              </Row>
           </div>
           <div>
-            <h3 style={contentStyle}>2</h3>
-          </div>
-          <div>
-            <h3 style={contentStyle}>3</h3>
-          </div>
-          <div>
-            <h3 style={contentStyle}>4</h3>
+            <Image src="./trinket image.png" preview={false}/>
+              <Row
+                style={{ textAlign: 'center' }}
+                >
+                <Col span={24}>
+                  <Title style={dMediumText}>
+                    Trinket: Hoard of Mischief
+                  </Title>
+                </Col>
+              </Row>
           </div>
         </Carousel>
       </Col>

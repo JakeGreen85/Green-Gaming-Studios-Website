@@ -43,6 +43,38 @@ const layoutStyle = {
   maxWidth: 'calc(50% - 8px)',
 };
 
+export const wTitleText = {
+  color: 'white', fontWeight: 'bold', fontSize: '60px', fontFamily: 'VT323' 
+}
+
+export const wLargeText = {
+  color: 'white', fontWeight: 'bold', fontSize: '40px', fontFamily: 'VT323' 
+}
+
+export const wMediumText = {
+  color: 'white', fontSize: '20px', fontFamily: 'VT323' 
+}
+
+export const wSmallText = {
+  color: 'white', fontSize: '14px', fontFamily: 'VT323' 
+}
+
+export const dTitleText = {
+  color: 'black', fontWeight: 'bold', fontSize: '60px', fontFamily: 'VT323' 
+}
+
+export const dLargeText = {
+  color: 'black', fontWeight: 'bold', fontSize: '40px', fontFamily: 'VT323' 
+}
+
+export const dMediumText = {
+  color: 'black', fontSize: '20px', fontFamily: 'VT323' 
+}
+
+export const dSmallText = {
+  color: 'black', fontSize: '14px', fontFamily: 'VT323' 
+}
+
 function App() {
   return (
     <>
