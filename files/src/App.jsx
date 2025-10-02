@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Solutions from './pages/Solutions';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import { Analytics } from "@vercel/analytics/next"
 
 import React from 'react';
 import { Flex, Layout, Typography, Col, Row } from 'antd';
@@ -78,6 +79,7 @@ export const dSmallText = {
 function App() {
   return (
     <>
+    <Analytics />
     <Router basename={import.meta.env.BASE_URL}>
       <Layout>
         <Header>
