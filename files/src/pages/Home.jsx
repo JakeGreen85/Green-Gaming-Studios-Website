@@ -50,19 +50,7 @@ function Home() {
                 >
                 <Col span={24}>
                   <Title style={dMediumText}>
-                    Chibo: Journey of Fate
-                  </Title>
-                </Col>
-              </Row>
-          </div>
-          <div>
-            <Image src="./trinket image.png" preview={false}/>
-              <Row
-                style={{ textAlign: 'center' }}
-                >
-                <Col span={24}>
-                  <Title style={dMediumText}>
-                    Trinket: Hoard of Mischief
+                    Rebels of the Realm
                   </Title>
                 </Col>
               </Row>

@@ -21,16 +21,7 @@ function Solutions() {
               style={{ width: 240 }}
               cover={<Image src="./chibo image.png" preview={false}/>}
             >
-              <Meta title="Chibo: Journey of Fate" description="Go on the journey of Chibo and explore the world of Raad" />
-            </Card>
-          </Col>
-          <Col span={4}>
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<Image src="./trinket image.png" preview={false}/>}
-            >
-              <Meta title="Trinket: Hoard of Mischief" description="Explore the neighborhood through the eyes of a mischievous dragon" />
+              <Meta title="Rebels of the Realm" description="Co-op RPG" />
             </Card>
           </Col>
         </Row>
