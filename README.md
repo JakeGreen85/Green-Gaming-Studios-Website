@@ -1,1 +1,1 @@
-# React-Website
+# Website for Green Gaming Studios
