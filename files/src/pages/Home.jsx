@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Col, Row, Button, Carousel, Image } from 'antd';
 const { Title, Text } = Typography;
-import { wLargeText, wMediumText, wSmallText, dLargeText, dMediumText, wTitleText } from '../App';
+import { wLargeText, wMediumText, wSmallText, dLargeText, dMediumText, wTitleText, dTitleText } from '../App';
 
 const contentStyle = {
   height: '160px',
@@ -14,7 +14,30 @@ const contentStyle = {
 function Home() {
   return (
     <>
-    <div style={{
+    <Row style={{ textAlign: 'center' }}>
+      <Col span={24}>
+        <Title style={dTitleText}>
+          Website coming soon!
+        </Title>
+      </Col>
+    </Row>
+    <Row style={{ textAlign: 'center' }}>
+      <Col span={24}>
+        <p style={dMediumText}>
+          Meanwhile, check out our social media: 
+        </p>
+      </Col>
+    </Row>
+    <Row style={{ textAlign: 'center' }}>
+      <Col span={24}>
+        <p style={dMediumText}>
+            <a href="https://www.instagram.com/greengamingstudios/">
+              Instagram
+            </a>
+        </p>
+      </Col>
+    </Row>
+    {/* <div style={{
       backgroundImage: "url('./chibo pool.png')",
       backgroundSize: 'cover',
       backgroundPosition: 'center 75%',
@@ -57,7 +80,7 @@ function Home() {
           </div>
         </Carousel>
       </Col>
-    </Row>
+    </Row> */}
     </>
   );
 }

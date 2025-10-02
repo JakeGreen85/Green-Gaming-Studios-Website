@@ -35,7 +35,7 @@ function Navbar() {
           </span>
         </Col>
         <Col span={12}>
-            <Menu
+            {/* <Menu
             theme="dark"
             mode="horizontal"
             defaultSelectedKeys={[currentKey]}
@@ -46,7 +46,7 @@ function Navbar() {
             <Menu.Item style={wMediumText} key="solutions" icon={<AppstoreOutlined />}>Portfolio</Menu.Item>
             <Menu.Item style={wMediumText} key="about" icon={<InfoCircleOutlined />}>About</Menu.Item>
             <Menu.Item style={wMediumText} key="contact" icon={<PhoneOutlined />}>Contact</Menu.Item>
-            </Menu>
+            </Menu> */}
         </Col>
     </Row>
   );
