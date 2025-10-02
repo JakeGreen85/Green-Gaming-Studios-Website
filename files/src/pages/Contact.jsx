@@ -32,7 +32,7 @@ function Contact() {
     <Row style={{textAlign: 'center'}}justify={'center'}>
       <Col span={8}>
         <Text style={dMediumText}>
-          email@domain.net
+          support@greengamingstudios.com
         </Text>
       </Col>
     </Row>
@@ -46,7 +46,7 @@ function Contact() {
     <Row style={{textAlign: 'center'}}justify={'center'}>
       <Col span={8}>
         <Text style={dMediumText}>
-          +45 12 34 56 78
+          +45 31 66 69 63
         </Text>
       </Col>
     </Row>
