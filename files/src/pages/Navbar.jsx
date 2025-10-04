@@ -8,7 +8,7 @@ import {
   PhoneOutlined,
 } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
-import { wLargeText, wMediumText, wSmallText } from '../App';
+import { wLargeText, wMediumText, wSmallText, wTitleText } from '../App';
 
 function Navbar() {
     const navigate = useNavigate();
@@ -30,7 +30,7 @@ function Navbar() {
   return (
     <Row>
         <Col span={24}>
-          <span style={wLargeText}>
+          <span style={wMediumText}>
             Green Gaming Studios
           </span>
         </Col>
