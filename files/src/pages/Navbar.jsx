@@ -29,7 +29,7 @@ function Navbar() {
   };
   return (
     <Row>
-        <Col span={12}>
+        <Col span={24}>
           <span style={wLargeText}>
             Green Gaming Studios
           </span>
