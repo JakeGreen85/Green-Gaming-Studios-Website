@@ -1,11 +1,14 @@
 import React from 'react';
-import { Typography, Col, Row } from 'antd';
+import { Typography, Col, Row, Image } from 'antd';
 import { dLargeText, dMediumText, dSmallText, dTitleText, wLargeText } from '../App';
 const { Title, Text } = Typography;
 
 function About() {
   return (
     <>
+    <Row justify={'center'}>
+      <Image src="./company_logo_black.png" style={{borderRadius: '20%', height: '20vh', width: '20vh'}} preview={false}/>
+    </Row>
     <Row
       style={{ textAlign: 'center' }}
       >
@@ -18,7 +21,7 @@ function About() {
     <Row style={{textAlign: 'center'}}justify={'center'}>
       <Col span={12}>
         <Text style={dMediumText}>
-          Green Gaming Studies is founded by a single developer with passion for both game design and web technology, I specialize in crafting engaging, high-quality content that entertains, informs, and inspires.
+          Green Gaming Studios is founded by a single developer with passion for both game design and web technology, I specialize in crafting engaging, high-quality content that entertains, informs, and inspires.
 
           Whether it's building immersive indie games or designing sleek, modern websites for businesses, my mission is simple:
         </Text>

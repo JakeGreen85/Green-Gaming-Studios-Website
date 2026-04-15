@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "antd": "^6.3.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
