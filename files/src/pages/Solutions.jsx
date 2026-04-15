@@ -21,7 +21,7 @@ function Solutions() {
         </Title>
         <Row justify={'center'}>
           <Col span={4} align={'middle'}>
-          <Button style={{ height: 400}} type='link' onClick={() => navigate(`/solutions/ROTR`, ("ROTR", "Desc", "image"))}>
+          <Button style={{ height: 400}} type='link' onClick={() => navigate(`/solutions/ROTR`)}>
             <Card
               hoverable
               style={{ height: 400, width: 240}}
