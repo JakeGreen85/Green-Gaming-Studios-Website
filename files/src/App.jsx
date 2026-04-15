@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import Solutions from './pages/Solutions';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import ROTR from './pages/ROTR';
+import VRQB from './pages/VRQB';
 
 import React from 'react';
 import { Flex, Layout, Typography, Col, Row } from 'antd';
@@ -83,29 +85,37 @@ function App() {
         <Header>
           <Navbar/>
         </Header>
-      </Layout>
       <Layout>
         <Content>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/solutions" element={<Solutions />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+          <div style={{
+                          backgroundImage: "url('./background_fantasy.png')",
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center 40%',
+                          height: '100vh',
+                          marginBottom: '10px'
+            }}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/solutions" element={<Solutions />} />
+              <Route path="/solutions/ROTR" element={<ROTR/>}/>
+              <Route path="/solutions/VRQB" element={<VRQB/>}/>
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </div>
         </Content>
       </Layout>
-    </Router>
-    <Layout>
       <Footer style={{ textAlign: 'center', marginTop: 'auto' }}>
         <Row style={{ textAlign: 'center' }}>
           <Col span={24}>
             <Text type='secondary'>
-              Copyright © 2025 Green Gaming Studios Aps
+              Copyright © 2026 Green Gaming Studios Aps
             </Text>
         </Col>
         </Row>
       </Footer>
     </Layout>
+    </Router>
     </>
   );
 }

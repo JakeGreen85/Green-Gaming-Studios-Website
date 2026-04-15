@@ -1,7 +1,7 @@
 import React from 'react';
-import { Typography, Col, Row, Button, Carousel, Image } from 'antd';
+import { Typography, Col, Row, Button, Carousel, Image, Timeline } from 'antd';
 const { Title, Text } = Typography;
-import { wLargeText, wMediumText, wSmallText, dLargeText, dMediumText, wTitleText, dTitleText } from '../App';
+import { wLargeText, wMediumText, wSmallText, dLargeText, dMediumText, wTitleText, dTitleText, dSmallText } from '../App';
 
 const contentStyle = {
   height: '160px',
@@ -14,73 +14,84 @@ const contentStyle = {
 function Home() {
   return (
     <>
-    <Row style={{ textAlign: 'center' }}>
-      <Col span={24}>
+    <Row>
+      <Col span={24} align={"middle"}>
         <Title style={dTitleText}>
-          Website coming soon!
+          Welcome to the universe of Green Gaming Studios
         </Title>
       </Col>
     </Row>
-    <Row style={{ textAlign: 'center' }}>
-      <Col span={24}>
-        <p style={dMediumText}>
-          Meanwhile, check out our social media: 
-        </p>
-      </Col>
-    </Row>
-    <Row style={{ textAlign: 'center' }}>
-      <Col span={24}>
-        <p style={dMediumText}>
-            <a href="https://www.instagram.com/greengamingstudios/">
-              Instagram
-            </a>
-        </p>
-      </Col>
-    </Row>
-    {/* <div style={{
-      backgroundImage: "url('./chibo pool.png')",
-      backgroundSize: 'cover',
-      backgroundPosition: 'center 75%',
-      height: '50vh',
-      marginTop: '10px',
-      marginBottom: '10px'
-    }}>
-    <Row
-      style={{ textAlign: 'center' }}
-      >
-      <Col span={24}>
-        <Title style={wTitleText}>
-          
-        </Title>
-      </Col>
-    </Row>
-    </div>
 
-    <Row style={{ textAlign: 'center' }}>
-      <Col span={24}>
+    <Row>
+      <Col span={24} align={"middle"}>
       <Title style={dLargeText}>
-        Our Games
+        Projects
       </Title>
       </Col>
     </Row>
-    <Row style={{ textAlign: 'center'}} justify={'center'}>
-      <Col span={12} >
-        <Carousel arrows={true} autoplay={{ dotDuration: true }} autoplaySpeed={5000}>
-          <div>
-            <Image src="./chibo image.png" style={{borderRadius: '20%'}} preview={false}/>
-              <Row
-                style={{ textAlign: 'center' }}
-                >
+    <Row justify={'center'}>
+      <Col span={6} align={"middle"}>
+        <Carousel dots={false} arrows={false} autoplay={{ dotDuration: true }} speed={1000} autoplaySpeed={5000}>
+          <Row>
+            <Image src="./rebels_of_the_realm_logo.png" style={{borderRadius: '20%', height: '20vh', width: '20vh'}} preview={false}/>
                 <Col span={24}>
                   <Title style={dMediumText}>
                     Rebels of the Realm
                   </Title>
                 </Col>
               </Row>
-          </div>
+          <Row>
+            <Image src="./qb_sim_logo.png" style={{borderRadius: '20%', height: '20vh', width: '20vh'}} preview={false}/>
+                <Col span={24}>
+                  <Title style={dMediumText}>
+                    VR QB Simulator
+                  </Title>
+                </Col>
+          </Row>
         </Carousel>
       </Col>
-    </Row> */}
+    </Row>
+    <Row justify={'center'}>
+      <Col span={12} align={"middle"}>
+      <Title style={dLargeText}>
+        History
+      </Title>
+      </Col>
+    </Row>
+    <Row justify={'center'}>
+      <Col span={20} align={"middle"}>
+        <Timeline style={dMediumText} items={[
+          {
+            title: "April 2024",
+            content: "Green Gaming Studios founded"
+          },
+          {
+            title: "May 2024",
+            content: "Rebels of the Realm development started"
+          },
+          {
+            title: "December 2025",
+            content: "Rebels of the Realm alpha testing started"
+          },
+          {
+            title: "January 2026",
+            content: "VR QB Sim development started"
+          },
+          {
+            title: "April 2026",
+            content: "VR QB Sim alpha testing started"
+          },
+          {
+            title: "Spring 2026",
+            content: "Rebels of the Realm demo launch planned"
+          },
+          {
+            title: "Summer 2026",
+            content: "Rebels of the Realm early access launch planned"
+          },
+        ]} orientation="horizontal" />
+      </Col>
+    </Row>
     </>
   );
 }

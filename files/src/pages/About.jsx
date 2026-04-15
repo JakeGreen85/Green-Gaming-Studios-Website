@@ -11,18 +11,16 @@ function About() {
       >
       <Col span={24}>
         <Title style={dTitleText}>
-            About Us
+            What Is Green Gaming Studios?
         </Title>
       </Col>
     </Row>
     <Row style={{textAlign: 'center'}}justify={'center'}>
       <Col span={12}>
         <Text style={dMediumText}>
-          At Green Gaming Studios, we believe digital experiences should be as beautiful as they are bold.
+          Green Gaming Studies is founded by a single developer with passion for both game design and web technology, I specialize in crafting engaging, high-quality content that entertains, informs, and inspires.
 
-          Founded by a small team of creators with a shared passion for both game design and web technology, we specialize in crafting engaging, high-quality content that entertains, informs, and inspires.
-
-          Whether it's building immersive indie games or designing sleek, modern websites for businesses, our mission is simple:
+          Whether it's building immersive indie games or designing sleek, modern websites for businesses, my mission is simple:
         </Text>
       </Col>
     </Row>
@@ -30,13 +28,6 @@ function About() {
       <Col span={8}>
       <Text style={dLargeText}>
         Make things that people remember.
-      </Text>
-      </Col>
-    </Row>
-    <Row style={{textAlign: 'center'}}justify={'center'}>
-      <Col span={8}>
-      <Text style={dTitleText}>
-        What We Do
       </Text>
       </Col>
     </Row>
@@ -50,7 +41,7 @@ function About() {
     <Row style={{textAlign: 'center'}} justify={'center'}>
       <Col span={8}>
       <Text style={dMediumText}>
-        We design and develop games that are fun, polished, and creatively driven. From retro-style arcade games to narrative-driven adventures, our goal is to create experiences that resonate with players.
+        I design and develop games that are fun, polished, and creatively driven. From retro-style arcade games to narrative-driven adventures, my goal is to create experiences that resonate with players.
       </Text>
       </Col>
     </Row>
@@ -64,7 +55,7 @@ function About() {
     <Row style={{textAlign: 'center'}} justify={'center'}>
       <Col span={8}>
       <Text style={dMediumText}>
-        We also help small businesses and creators level up their online presence with custom websites that are fast, responsive, and tailored to their brand. No templates. No fluff. Just results.
+        I also help small businesses and creators level up their online presence with custom websites that are fast, responsive, and tailored to their brand. No templates. No fluff. Just results.
       </Text>
       </Col>
     </Row>
@@ -78,14 +69,14 @@ function About() {
     <Row style={{textAlign: 'center'}} justify={'center'}>
       <Col span={8}>
       <Text style={dMediumText}>
-        Whether you're looking to launch a game, build your first website, or just brainstorm ideas, we're here to help.
+        Whether you're looking to launch a game, build your first website, or just brainstorm ideas, I'm here to help.
       </Text>
       </Col>
     </Row>
     <Row style={{textAlign: 'center'}} justify={'center'}>
       <Col span={8}>
       <Text style={dLargeText}>
-        Contact us to get started.
+        Reach out to get started.
       </Text>
       </Col>
     </Row>

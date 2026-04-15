@@ -18,11 +18,11 @@ function Contact() {
     <Row style={{textAlign: 'center'}}justify={'center'}>
       <Col span={8}>
         <Text style={dMediumText}>
-          Whether you're looking to launch a new website, develop a game, or just have a great idea you want to explore — we'd love to hear from you.
+          Whether you're looking to launch a new website, develop a game, or just have a great idea you want to explore — I'd love to hear from you.
         </Text>
       </Col>
     </Row>
-    <Row style={{textAlign: 'center'}}justify={'center'}>
+    {/* <Row style={{textAlign: 'center'}}justify={'center'}>
       <Col span={8}>
         <Text style={dLargeText}>
           Email:
@@ -49,7 +49,7 @@ function Contact() {
           +45 31 66 69 63
         </Text>
       </Col>
-    </Row>
+    </Row> */}
     <Row style={{textAlign: 'center'}}justify={'center'}>
       <Col span={8}>
         <Text style={dLargeText}>
@@ -60,7 +60,9 @@ function Contact() {
     <Row style={{textAlign: 'center'}}justify={'center'}>
       <Col span={8}>
         <Text style={dMediumText}>
-          Facebook - Instagram - X
+          <a href="https://www.instagram.com/greengamingstudios/">
+              Instagram
+          </a>
         </Text>
       </Col>
     </Row>

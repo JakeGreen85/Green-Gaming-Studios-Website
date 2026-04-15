@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Navigate, useLocation } from 'react-router-dom';
-import { Layout, Menu, Typography, Col, Row, Image, Button } from 'antd';
+import { Layout, Menu, Typography, Col, Row, Image, Button, Space } from 'antd';
 import {
   HomeOutlined,
   AppstoreOutlined,
@@ -29,13 +29,17 @@ function Navbar() {
   };
   return (
     <Row>
-        <Col span={24}>
+        <Col span={12}>
+        <Space size={'small'}>
+        <Image src="./company_logo_no_text.png" style={{borderRadius: '20%', height: '5vh'}} preview={false}/>
+
           <span style={wMediumText}>
             Green Gaming Studios
           </span>
+        </Space>
         </Col>
         <Col span={12}>
-            {/* <Menu
+            <Menu
             theme="dark"
             mode="horizontal"
             defaultSelectedKeys={[currentKey]}
@@ -46,7 +50,7 @@ function Navbar() {
             <Menu.Item style={wMediumText} key="solutions" icon={<AppstoreOutlined />}>Portfolio</Menu.Item>
             <Menu.Item style={wMediumText} key="about" icon={<InfoCircleOutlined />}>About</Menu.Item>
             <Menu.Item style={wMediumText} key="contact" icon={<PhoneOutlined />}>Contact</Menu.Item>
-            </Menu> */}
+            </Menu>
         </Col>
     </Row>
   );
