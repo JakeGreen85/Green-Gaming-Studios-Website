@@ -92,6 +92,9 @@ function Home() {
         ]} orientation="horizontal" />
       </Col>
     </Row>
+    <Row justify={'center'} style={{marginTop: '5vh'}}>
+      <Image src="./company_logo_black.png" style={{borderRadius: '20%', height: '40vh', width: '40vh'}} preview={false}/>
+    </Row>
     </>
   );
 }
