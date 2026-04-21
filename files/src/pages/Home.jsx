@@ -22,7 +22,7 @@ function Home() {
       </Col>
     </Row>
     <Row justify={'center'}>
-      <Col span={6} align={"middle"}>
+      <Col span={24} align={"middle"}>
         <Carousel dots={false} arrows={false} autoplay={{ dotDuration: true }} speed={1000} autoplaySpeed={5000}>
           <Row>
             <Image src="./rebels_of_the_realm_logo.png" style={{borderRadius: '20%', height: '20vh', width: '20vh'}} preview={false}/>
@@ -86,7 +86,7 @@ function Home() {
     </Row>
     <Row justify={'center'} style={{marginTop: '5vh'}}>
       <Col span={20} align={"middle"}>
-      <Image src="./company_logo_black.png" style={{borderRadius: '20%', height: '40vh', width: '40vh'}} preview={false}/>
+      <Image src="./company_logo_black_small.png"  preview={false}/>
       </Col>
     </Row>
     </>

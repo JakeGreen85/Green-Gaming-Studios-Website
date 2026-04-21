@@ -36,24 +36,22 @@ function Solutions() {
         </Title>
         <Row justify={'center'}>
           <Col span={12} align={'right'}>
-          <Button style={{ height: 400}} type='link' onClick={() => showDrawer(<ROTR></ROTR>)}>
+          <Button style={{ height: '100%'}} type='link' onClick={() => showDrawer(<ROTR></ROTR>)}>
             <Card
               hoverable
-              style={{ height: 400, width: 240}}
-              cover={<Image src="./rebels_of_the_realm_logo.png" style={{height: '20vh'}} preview={false}/>}
+              cover={<Image src="./rebels_of_the_realm_logo.png" style={{width: '100%'}} preview={false}/>}
               >
               <Meta style={{ textWrap: 'wrap'}} title="Rebels of the Realm" description="Co-op RPG" />
             </Card>
           </Button>
           </Col>
           <Col span={12} align={'left'}>
-            <Button style={{ height: 400}} type='link' onClick={() => showDrawer(<VRQB></VRQB>)}>
+            <Button style={{ height: '100%'}} type='link' onClick={() => showDrawer(<VRQB></VRQB>)}>
             <Card
               hoverable
-              style={{ height: 400, width: 240 }}
-              cover={<Image src="./qb_sim_logo.png" style={{height: '20vh'}} preview={false}/>}
+              cover={<Image src="./qb_sim_logo.png" style={{width: '100%'}} preview={false}/>}
               >
-              <Meta style={{ textWrap: 'wrap'}} title="VR QB Simulator" description="Virtual Reality training tool for quarterback development" />
+              <Meta style={{ textWrap: 'wrap'}} title="VR QB Simulator" description="VR training tool" />
             </Card>
           </Button>
           </Col>
