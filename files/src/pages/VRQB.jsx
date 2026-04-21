@@ -1,10 +1,6 @@
-import React from 'react';
-import { Typography, Col, Row, Image } from 'antd';
-import { dTitleText, dMediumText, dLargeText } from '../App';
 import GameTemp from './GameTemp';
-const { Title, Text } = Typography;
 
-function VRQB(props) {
+function VRQB() {
   return (
     <>
     <GameTemp 

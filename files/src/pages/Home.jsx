@@ -3,14 +3,6 @@ import { Typography, Col, Row, Button, Carousel, Image, Timeline } from 'antd';
 const { Title, Text } = Typography;
 import { wLargeText, wMediumText, wSmallText, dLargeText, dMediumText, wTitleText, dTitleText, dSmallText } from '../App';
 
-const contentStyle = {
-  height: '160px',
-  color: '#fff',
-  lineHeight: '160px',
-  textAlign: 'center',
-  background: '#364d79',
-};
-
 function Home() {
   return (
     <>
@@ -93,7 +85,9 @@ function Home() {
       </Col>
     </Row>
     <Row justify={'center'} style={{marginTop: '5vh'}}>
+      <Col span={20} align={"middle"}>
       <Image src="./company_logo_black.png" style={{borderRadius: '20%', height: '40vh', width: '40vh'}} preview={false}/>
+      </Col>
     </Row>
     </>
   );

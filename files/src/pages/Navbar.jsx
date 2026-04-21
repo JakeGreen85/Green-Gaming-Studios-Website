@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, Navigate, useLocation } from 'react-router-dom';
 import { Layout, Menu, Typography, Col, Row, Image, Button, Space } from 'antd';
 import {
@@ -12,33 +12,38 @@ import { wLargeText, wMediumText, wSmallText, wTitleText } from '../App';
 
 function Navbar() {
     const navigate = useNavigate();
-
     const location = useLocation();
+
+    useEffect(() => {
+        console.log('Current path:', location.pathname);
+        setCurrentKey(pathToKey[location.pathname] || 'home');
+    }, [location]);
 
     const pathToKey = {
         '/': 'home',
         '/solutions': 'solutions',
+        '/solutions/ROTR': 'solutions',
+        '/solutions/VRQB': 'solutions',
         '/about': 'about',
         '/contact': 'contact',
     };
 
-    const currentKey = pathToKey[location.pathname] || 'home';
+    const [currentKey, setCurrentKey] = useState(pathToKey[location.pathname] || 'home');
 
   const handleClick = (e) => {
     navigate(`/${e.key === 'home' ? '' : e.key}`); // go to '/', '/services', etc.
   };
   return (
-    <Row>
-        <Col span={12}>
-        <Space size={'small'}>
-        <Image src="./company_logo_no_text.png" style={{borderRadius: '20%', height: '5vh'}} preview={false}/>
-
+    <Row wrap={false}>
+        <Col flex='75px'>
+          <Image src="./company_logo_no_text.png" style={{borderRadius: '20%', height: '5vh'}} preview={false}/>
+        </Col>
+        <Col flex='175px'>
           <span style={wMediumText}>
             Green Gaming Studios
           </span>
-        </Space>
         </Col>
-        <Col span={12}>
+        <Col flex='auto'>
             <Menu
             theme="dark"
             mode="horizontal"

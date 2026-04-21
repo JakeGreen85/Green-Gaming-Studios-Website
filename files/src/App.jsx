@@ -91,14 +91,12 @@ function App() {
                           backgroundImage: "url('./background_fantasy.png')",
                           backgroundSize: 'cover',
                           backgroundPosition: 'center 40%',
-                          height: '100vh',
-                          marginBottom: '10px'
+                          height: '100%',
+                          paddingBottom: '50px',
             }}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/solutions" element={<Solutions />} />
-              <Route path="/solutions/ROTR" element={<ROTR/>}/>
-              <Route path="/solutions/VRQB" element={<VRQB/>}/>
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>

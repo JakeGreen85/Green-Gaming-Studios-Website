@@ -19,12 +19,10 @@ function GameTemp(props) {
       <Col span={10} align={'right'}>
         <Image src={props.image} style={{height: '20vh'}} preview={false}/>
       </Col>
-      <Col span={6} align={'left'}>
+      <Col span={12} align={'left'}>
         <Text>
           {props.description}
         </Text>
-      </Col>
-      <Col span={6} align={'left'}>
       </Col>
     </Row>
     <Row justify={'center'} gutter={[20, 20]}>

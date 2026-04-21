@@ -1,8 +1,10 @@
-import React from 'react';
-import { Typography, Col, Row, Card, Image, Button } from 'antd';
+import React, { useEffect, useState } from 'react';
+import { Typography, Col, Row, Card, Image, Button, Drawer } from 'antd';
 const { Title, Text } = Typography;
 import { dLargeText, dTitleText } from '../App';
 import { useNavigate } from 'react-router-dom';
+import VRQB from './VRQB';
+import ROTR from './ROTR';
 
 const { Meta } = Card;
 
@@ -11,17 +13,30 @@ const { Meta } = Card;
 function Solutions() {
   const navigate = useNavigate();
 
+  const [open, setOpen] = useState(false);
+  const [drawerContent, setDrawerContent] = useState(<VRQB></VRQB>);
+
+  const showDrawer = (content) => {
+    setDrawerContent(content);
+    setOpen(true);
+  }
+
+  const closeDrawer = () => {
+    setOpen(false);
+  }
+
   return (
+    <>
     <Row
       style={{ textAlign: 'center' }}
-    >
+      >
       <Col span={24}>
         <Title style={dTitleText}>
             Portfolio
         </Title>
         <Row justify={'center'}>
-          <Col span={4} align={'middle'}>
-          <Button style={{ height: 400}} type='link' onClick={() => navigate(`/solutions/ROTR`)}>
+          <Col span={12} align={'right'}>
+          <Button style={{ height: 400}} type='link' onClick={() => showDrawer(<ROTR></ROTR>)}>
             <Card
               hoverable
               style={{ height: 400, width: 240}}
@@ -31,8 +46,8 @@ function Solutions() {
             </Card>
           </Button>
           </Col>
-          <Col span={4} align={'middle'}>
-            <Button style={{ height: 400}} type='link' onClick={() => navigate(`/solutions/VRQB`)}>
+          <Col span={12} align={'left'}>
+            <Button style={{ height: 400}} type='link' onClick={() => showDrawer(<VRQB></VRQB>)}>
             <Card
               hoverable
               style={{ height: 400, width: 240 }}
@@ -45,6 +60,15 @@ function Solutions() {
         </Row>
       </Col>
     </Row>
+    <Row>
+      <Col span={24} align={'middle'}>
+
+      </Col>
+    </Row>
+    <Drawer size={'50%'} placement='bottom' onClose={closeDrawer} open={open}>
+      {drawerContent}
+    </Drawer>
+    </>
   );
 }
 
