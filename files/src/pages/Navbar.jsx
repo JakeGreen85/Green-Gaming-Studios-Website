@@ -44,10 +44,10 @@ function Navbar() {
     if (screens.md === false) {
         return (
             <Row wrap={false} align="middle" style={{ width: '100%' }}>
-                <Col flex="auto">
-                    <Image src="./company_logo_no_text.png" style={{ borderRadius: '20%', height: '5vh' }} preview={false} />
+                <Col flex="75px">
+                    <Image src="./company_logo.png" style={{ borderRadius: '20%', height: '5vh' }} preview={false} />
                 </Col>
-                <Col flex="none">
+                <Col align="right" flex="auto">
                     <Button
                         type="text"
                         icon={<MenuOutlined style={{ color: 'white', fontSize: '20px' }} />}
@@ -75,7 +75,7 @@ function Navbar() {
     }
 
     return (
-        <Row wrap={false}>
+        <Row wrap={false} height="100%">
             <Col flex='75px'>
                 <Image src="./company_logo_no_text.png" style={{ borderRadius: '20%', height: '5vh' }} preview={false} />
             </Col>
