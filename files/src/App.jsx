@@ -46,35 +46,35 @@ const layoutStyle = {
 };
 
 export const wTitleText = {
-  color: 'white', fontWeight: 'bold', fontSize: '60px', fontFamily: 'VT323' 
+  color: 'white', fontWeight: 'bold', fontSize: 'clamp(30px, 5vw, 60px)', fontFamily: 'VT323'
 }
 
 export const wLargeText = {
-  color: 'white', fontWeight: 'bold', fontSize: '40px', fontFamily: 'VT323' 
+  color: 'white', fontWeight: 'bold', fontSize: 'clamp(22px, 3.5vw, 40px)', fontFamily: 'VT323'
 }
 
 export const wMediumText = {
-  color: 'white', fontSize: '20px', fontFamily: 'VT323' 
+  color: 'white', fontSize: 'clamp(16px, 2vw, 20px)', fontFamily: 'VT323'
 }
 
 export const wSmallText = {
-  color: 'white', fontSize: '14px', fontFamily: 'VT323' 
+  color: 'white', fontSize: 'clamp(12px, 1.5vw, 14px)', fontFamily: 'VT323'
 }
 
 export const dTitleText = {
-  color: 'black', fontWeight: 'bold', fontSize: '60px', fontFamily: 'VT323' 
+  color: 'black', fontWeight: 'bold', fontSize: 'clamp(30px, 5vw, 60px)', fontFamily: 'VT323'
 }
 
 export const dLargeText = {
-  color: 'black', fontWeight: 'bold', fontSize: '40px', fontFamily: 'VT323' 
+  color: 'black', fontWeight: 'bold', fontSize: 'clamp(22px, 3.5vw, 40px)', fontFamily: 'VT323'
 }
 
 export const dMediumText = {
-  color: 'black', fontSize: '20px', fontFamily: 'VT323' 
+  color: 'black', fontSize: 'clamp(16px, 2vw, 20px)', fontFamily: 'VT323'
 }
 
 export const dSmallText = {
-  color: 'black', fontSize: '14px', fontFamily: 'VT323' 
+  color: 'black', fontSize: 'clamp(12px, 1.5vw, 14px)', fontFamily: 'VT323'
 }
 
 function App() {

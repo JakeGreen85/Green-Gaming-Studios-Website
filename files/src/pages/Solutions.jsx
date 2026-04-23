@@ -35,7 +35,7 @@ function Solutions() {
             Portfolio
         </Title>
         <Row justify={'center'}>
-          <Col span={12} align={'right'}>
+          <Col xs={24} md={12} align={'middle'}>
           <Button style={{ height: '100%'}} type='link' onClick={() => showDrawer(<ROTR></ROTR>)}>
             <Card
               hoverable
@@ -45,7 +45,7 @@ function Solutions() {
             </Card>
           </Button>
           </Col>
-          <Col span={12} align={'left'}>
+          <Col xs={24} md={12} align={'middle'}>
             <Button style={{ height: '100%'}} type='link' onClick={() => showDrawer(<VRQB></VRQB>)}>
             <Card
               hoverable
@@ -56,11 +56,6 @@ function Solutions() {
           </Button>
           </Col>
         </Row>
-      </Col>
-    </Row>
-    <Row>
-      <Col span={24} align={'middle'}>
-
       </Col>
     </Row>
     <Drawer size={'50%'} placement='bottom' onClose={closeDrawer} open={open}>

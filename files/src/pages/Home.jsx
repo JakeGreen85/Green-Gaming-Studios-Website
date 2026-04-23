@@ -24,16 +24,16 @@ function Home() {
     <Row justify={'center'}>
       <Col span={24} align={"middle"}>
         <Carousel dots={false} arrows={false} autoplay={{ dotDuration: true }} speed={1000} autoplaySpeed={5000}>
-          <Row>
-            <Image src="./rebels_of_the_realm_logo.png" style={{borderRadius: '20%', height: '20vh', width: '20vh'}} preview={false}/>
+          <Row justify={'center'}>
+            <Image src="./rebels_of_the_realm_logo.png" style={{borderRadius: '20%', maxHeight: '20vh', maxWidth: '20vh', width: '100%'}} preview={false}/>
                 <Col span={24}>
                   <Title style={dMediumText}>
                     Rebels of the Realm
                   </Title>
                 </Col>
               </Row>
-          <Row>
-            <Image src="./qb_sim_logo.png" style={{borderRadius: '20%', height: '20vh', width: '20vh'}} preview={false}/>
+          <Row justify={'center'}>
+            <Image src="./qb_sim_logo.png" style={{borderRadius: '20%', maxHeight: '20vh', maxWidth: '20vh', width: '100%'}} preview={false}/>
                 <Col span={24}>
                   <Title style={dMediumText}>
                     VR QB Simulator
@@ -44,14 +44,14 @@ function Home() {
       </Col>
     </Row>
     <Row justify={'center'}>
-      <Col span={12} align={"middle"}>
+      <Col xs={24} md={12} align={"middle"}>
       <Title style={dLargeText}>
         History
       </Title>
       </Col>
     </Row>
     <Row justify={'center'}>
-      <Col span={20} align={"middle"}>
+      <Col xs={24} md={20} align={"middle"}>
         <Timeline style={dMediumText} items={[
           {
             title: "April 2024",
@@ -85,7 +85,7 @@ function Home() {
       </Col>
     </Row>
     <Row justify={'center'} style={{marginTop: '5vh'}}>
-      <Col span={20} align={"middle"}>
+      <Col xs={24} md={20} align={"middle"}>
       <Image src="./company_logo_black_small.png"  preview={false}/>
       </Col>
     </Row>
