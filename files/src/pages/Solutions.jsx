@@ -39,7 +39,7 @@ function Solutions() {
           <Button style={{ height: '100%'}} type='link' onClick={() => showDrawer(<ROTR></ROTR>)}>
             <Card
               hoverable
-              cover={<Image src="./rebels_of_the_realm_logo.png" style={{width: '100%'}} preview={false}/>}
+              cover={<Image src="./rebels_of_the_realm_logo.png" style={{width: '100%', height: '200px', objectFit: 'contain'}} preview={false}/>}
               >
               <Meta style={{ textWrap: 'wrap'}} title="Rebels of the Realm" description="Co-op RPG" />
             </Card>
@@ -49,7 +49,7 @@ function Solutions() {
             <Button style={{ height: '100%'}} type='link' onClick={() => showDrawer(<VRQB></VRQB>)}>
             <Card
               hoverable
-              cover={<Image src="./qb_sim_logo.png" style={{width: '100%'}} preview={false}/>}
+              cover={<Image src="./qb_sim_logo.png" style={{width: '100%', height: '200px', objectFit: 'contain'}} preview={false}/>}
               >
               <Meta style={{ textWrap: 'wrap'}} title="VR QB Simulator" description="VR training tool" />
             </Card>

@@ -25,7 +25,7 @@ function Home() {
       <Col span={24} align={"middle"}>
         <Carousel dots={false} arrows={false} autoplay={{ dotDuration: true }} speed={1000} autoplaySpeed={5000}>
           <Row justify={'center'}>
-            <Image src="./rebels_of_the_realm_logo.png" style={{borderRadius: '20%', maxHeight: '20vh', maxWidth: '20vh', width: '100%'}} preview={false}/>
+            <Image src="./rebels_of_the_realm_logo.png" style={{borderRadius: '20%', maxHeight: '20vh', maxWidth: '20vh', width: '100%', objectFit: 'contain'}} preview={false}/>
                 <Col span={24}>
                   <Title style={dMediumText}>
                     Rebels of the Realm
@@ -33,7 +33,7 @@ function Home() {
                 </Col>
               </Row>
           <Row justify={'center'}>
-            <Image src="./qb_sim_logo.png" style={{borderRadius: '20%', maxHeight: '20vh', maxWidth: '20vh', width: '100%'}} preview={false}/>
+            <Image src="./qb_sim_logo.png" style={{borderRadius: '20%', maxHeight: '20vh', maxWidth: '20vh', width: '100%', objectFit: 'contain'}} preview={false}/>
                 <Col span={24}>
                   <Title style={dMediumText}>
                     VR QB Simulator
@@ -74,11 +74,11 @@ function Home() {
             content: "VR QB Sim alpha testing started"
           },
           {
-            title: "Spring 2026",
+            title: "Summer 2026",
             content: "Rebels of the Realm demo launch planned"
           },
           {
-            title: "Summer 2026",
+            title: "Fall 2026",
             content: "Rebels of the Realm early access launch planned"
           },
         ]} orientation="horizontal" />
@@ -86,7 +86,7 @@ function Home() {
     </Row>
     <Row justify={'center'} style={{marginTop: '5vh'}}>
       <Col xs={24} md={20} align={"middle"}>
-      <Image src="./company_logo_black_small.png"  preview={false}/>
+      <Image src="./company_logo_black_small.png" style={{maxHeight: '15vh', objectFit: 'contain'}} preview={false}/>
       </Col>
     </Row>
     </>

@@ -17,7 +17,7 @@ function GameTemp(props) {
     </Row>
     <Row justify={'center'} gutter={[20, 20]}>
       <Col xs={24} md={10} align={'middle'}>
-        <Image src={props.image} style={{maxHeight: '20vh', width: '100%', objectFit: 'contain'}} preview={false}/>
+        <Image src={props.image} style={{maxHeight: '20vh', width: '100%', objectFit: 'contain', borderRadius: '12px'}} preview={false}/>
       </Col>
       <Col xs={24} md={12} align={'left'}>
         <Text>

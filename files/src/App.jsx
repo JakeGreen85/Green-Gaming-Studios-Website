@@ -107,7 +107,7 @@ function App() {
         <Row style={{ textAlign: 'center' }}>
           <Col span={24}>
             <Text type='secondary'>
-              Copyright © 2026 Green Gaming Studios Aps
+              © 2024-2026 Green Gaming Studios. All rights reserved.
             </Text>
         </Col>
         </Row>
