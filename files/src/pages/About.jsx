@@ -37,7 +37,7 @@ function About() {
         </Text>
       </Col>
     </Row>
-    <Row style={{textAlign: 'center'}} justify={'center'}>
+    {/* <Row style={{textAlign: 'center'}} justify={'center'}>
       <Col span={24}>
       <Text style={{...dLargeText, whiteSpace: 'nowrap'}}>
         Game Development
@@ -64,7 +64,7 @@ function About() {
         I also help businesses level up their online presence with custom websites that are fast, responsive, and tailored to their brand.
       </Text>
       </Col>
-    </Row>
+    </Row> */}
     {/* <Row style={{textAlign: 'center'}} justify={'center'}>
       <Col span={24}>
       <Text style={{...dLargeText, whiteSpace: 'nowrap'}}>
