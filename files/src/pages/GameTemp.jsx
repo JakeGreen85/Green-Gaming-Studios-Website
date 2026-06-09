@@ -25,13 +25,6 @@ function GameTemp(props) {
         </Text>
       </Col>
     </Row>
-    <Row justify={'center'} gutter={[20, 20]}>
-      <Col span={24} align={'middle'}>
-      <Button type='primary' onClick={() => navigate(`/solutions`)}>
-        Back
-      </Button>
-      </Col>
-    </Row>
     </>
   );
 }
