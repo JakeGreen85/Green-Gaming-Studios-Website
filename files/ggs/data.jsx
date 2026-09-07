@@ -29,6 +29,15 @@ const GAMES = [
     cover: "ggs/rotr-header.png",
     featured: true,
   },
+  {
+    title: "VR QB Simulator",
+    tagline: "Changing how quarterbacks train. Step into the pocket and read live pre-snap looks, feel the pressure arrive in real time, and get real reps in a headset instead of standing on the sideline.",
+    status: "Prototype",
+    year: "TBA",
+    platforms: ["Meta Quest", "VR"],
+    cover: "ggs/vrqb-header.png",
+    featured: true,
+  },
 ];
 
 const PROJECT = {
@@ -42,7 +51,7 @@ const PROJECT = {
 const VALUES = [
   { k: "01", t: "Players first, always", d: "Every decision runs through one question — does this make the time someone spends with us better?" },
   { k: "02", t: "No live service, no grind", d: "Rebels respects your time. Play once, twice, or a hundred times — it's complete either way." },
-  { k: "03", t: "Made for two", d: "Co-op from the ground up. The best stories happen when someone's in the chair next to you." },
+  { k: "03", t: "Built by hand", d: "No templates, no asset flips. Every system, every world is made in-house, one decision at a time." },
   { k: "04", t: "Made to last", d: "Not designed to be replaced. Games that stay in rotation because they earned it." },
 ];
 
@@ -59,7 +68,7 @@ const FOUNDER = {
   img: "portrait · you",
   note: [
     "Hi — I just finished my Master's in Games, and I'm building Rebels of the Realm full-time.",
-    "I believe in co-op games that respect player agency and don't ask you to grind. Games made with obsessive care for how they play. It's slower, but it's honest.",
+    "I believe in games that respect player agency and don't ask you to grind. Games made with obsessive care for how they play. It's slower, but it's honest.",
   ],
   sign: "— J. Green, founder",
 };
@@ -68,7 +77,7 @@ const FACTS = [
   { k: "Role", v: "Solo developer" },
   { k: "Studied", v: "Master's in Games" },
   { k: "Building", v: "Rebels of the Realm" },
-  { k: "Approach", v: "Player-first co-op" },
+  { k: "Approach", v: "Player-first, handcrafted" },
 ];
 
 const RECOGNITION = [];

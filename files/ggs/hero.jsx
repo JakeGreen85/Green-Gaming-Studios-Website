@@ -49,8 +49,8 @@ function HeroEditorial({ onNav }) {
           <span className="line"><span className="w">worth <em>staying</em> in.</span></span>
         </h1>
         <p className="lede hero-lede">
-          Green Gaming Studios is building Rebels of the Realm — a co-op action RPG
-          made by one developer who just finished their Master's in Games.
+          Green Gaming Studios is an indie studio crafting handcrafted worlds
+          with obsessive care — one developer, no shortcuts.
         </p>
         <HeroCTAs onNav={onNav} />
       </div>
@@ -95,12 +95,12 @@ function HeroImmersive({ onNav }) {
         <img className="hero-mark" src="ggs/logo-white.png" alt="Green Gaming Studios" />
         <p className="eyebrow no-rule hero-imm-eyebrow">Green Gaming Studios</p>
         <h1 className="display-l hero-imm-title">
-          Cozy worlds, built by hand,<br />made for two.
+          Cozy worlds, built by hand.
         </h1>
         <HeroCTAs onNav={onNav} dark />
       </div>
       <div className="hero-foot wrap on-dark-foot">
-        <span className="mono-label">EST. 2024 · INDEPENDENT</span>
+        <span className="mono-label">EST. 2024</span>
         <span className="mono-label">↓ WANDER IN</span>
       </div>
     </header>);
@@ -109,7 +109,7 @@ function HeroImmersive({ onNav }) {
 
 /* ---------- C · PLAYFUL ---------- */
 function HeroPlayful({ onNav }) {
-  const words = ["worlds", "weekends", "co-op nights", "small adventures", "friendships"];
+  const words = ["worlds", "weekends", "long nights", "small adventures", "characters"];
   const [i, setI] = _uS(0);
   _uE(() => {
     const id = setInterval(() => setI((v) => (v + 1) % words.length), 2100);
@@ -130,14 +130,14 @@ function HeroPlayful({ onNav }) {
           you'll want to share.
         </h1>
         <p className="lede" style={{ margin: "8px 0 0" }}>
-          A solo indie studio making warm, handcrafted co-op games.
+          A solo indie studio making warm, handcrafted games.
           No live-service treadmill — just worlds I'd want to live in.
         </p>
         <HeroCTAs onNav={onNav} />
       </div>
       <Marquee
         className="hero-play-marquee"
-        items={["HANDCRAFTED", "CO-OP FIRST", "COZY WORLDS", "SMALL TEAM", "BIG HEART", "EST. 2024"]}
+        items={["HANDCRAFTED", "INDIE MADE", "COZY WORLDS", "SMALL TEAM", "BIG HEART", "EST. 2024"]}
         sep=" ✦ " speed={34} />
       
     </header>);

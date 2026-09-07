@@ -6,6 +6,7 @@
 function GamesSection() {
   const STATUS = {
     "In development": "status-dev",
+    "Prototype": "status-dev",
     "Released": "status-live",
     "Coming soon": "status-soon"
   };
@@ -25,7 +26,7 @@ function GamesSection() {
           {GAMES.map((g, i) =>
           <Reveal as="article" className={`game-card ${g.featured ? "game-featured" : ""}`} key={i} delay={String(i % 3 + 1)}>
               <div className="game-cover" style={{ aspectRatio: g.featured ? "3 / 2" : "4 / 3", overflow: "hidden" }}>
-                <img src={g.cover} alt={`${g.title} — co-op action RPG key art`} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+                <img src={g.cover} alt={`${g.title} key art`} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
                 <span className={`game-status ${STATUS[g.status] || ""}`}>
                   <span className="dot" aria-hidden="true"></span>{g.status}
                 </span>
@@ -57,12 +58,13 @@ function WorldSection() {
         <Reveal><p className="eyebrow no-rule">What we make</p></Reveal>
         <div className="world-grid">
           <Reveal as="h2" className="display-l world-statement">
-            We make games you finish with someone, not games that try to keep you forever.
+            We make games you finish, not games built to keep you forever.
           </Reveal>
           <Reveal className="world-aside" delay="1">
             <p className="lede">
-              Every Green Gaming Studios world is built around a second chair — couches,
-              long-distance calls, the friend who's bad at games but shows up anyway.
+              Every Green Gaming Studios world starts with the same question — does this
+              make the time someone spends with us better? No grind, no live-service
+              treadmill, just games built with care from start to finish.
             </p>
           </Reveal>
         </div>
@@ -191,7 +193,7 @@ function FounderSection() {
 
           <Reveal className="founder-copy" delay="1">
             {FOUNDER.note.map((p, i) =>
-            <p className="lede founder-note" key={i}>{i === 0 ? "Hi — I'm the whole studio - for now." : "I believe in co-op games that respect player agency and don't ask you to grind. Games made with obsessive care for how they play"}</p>
+            <p className="lede founder-note" key={i}>{i === 0 ? "Hi — I'm the whole studio - for now." : "I believe in games that respect player agency and don't ask you to grind. Games made with obsessive care for how they play"}</p>
             )}
             <p className="founder-sign">{FOUNDER.sign}</p>
           </Reveal>
