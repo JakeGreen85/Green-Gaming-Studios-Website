@@ -180,7 +180,9 @@ function FounderSection() {
 
         <div className="founder-grid">
           <Reveal className="founder-portrait">
-            <Placeholder dark className="founder-img" label={FOUNDER.img} ratio="4 / 5" />
+            <div className="founder-img" style={{ aspectRatio: "4 / 5", overflow: "hidden" }}>
+              <img src="ggs/me.jpeg" alt={FOUNDER.name} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+            </div>
             <div className="founder-card">
               <span className="founder-name display-m">{FOUNDER.name}</span>
               <span className="founder-role mono-label">{FOUNDER.role}</span>
